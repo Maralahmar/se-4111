@@ -6,6 +6,7 @@ public class main {
 		// TODO Auto-generated method stub
 		singletonClass tmp = singletonClass.getInstance( );
 	      tmp.demoMethod( );
+	      System.out.println("Mariam Alahmar");
 	}
 
 }
