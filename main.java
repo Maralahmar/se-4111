@@ -7,10 +7,7 @@ public class main {
 		singletonClass tmp = singletonClass.getInstance( );
 	      tmp.demoMethod( );
 	      System.out.println("Mariam Alahmar");
-	      System.out.println("Hadeel Abdullah ");
-	      System.out.println("Leena Abdullah ");
-	      System.out.println("Leena Test  1 ");
-	      
+	      System.out.println("Hadeel Abdullah");
+	      System.out.println("Leena Abdullah");
 	}
 }
- 

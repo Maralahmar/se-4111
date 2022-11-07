@@ -2,21 +2,24 @@ package com.singleton;
 
 public class singletonClass {
 
-		   private static singletonClass singleton = new singletonClass( );
+	private static singletonClass singleton ;
+		private int LeenaTemp;
+		// private int tempM;
+		// private int tempH;
 
-		   /* A private Constructor prevents any other
-		    * class from instantiating.
-		    */
 		   private singletonClass() { }
-
-		   /* Static 'instance' method */
 		   public static singletonClass getInstance( ) {
+			 if (singleton == null) {	 				 singleton	 = new singletonClass( ); }
 		      return singleton;
-		   }
+	}		  
+	// mariamcode:	   
+	 public int getTemp() {
+		 return this.LeenaTemp;}
+	 public void setTemp(int LeenaTemp) {
+		if (LeenaTemp<7) {
+			System.out.println(++LeenaTemp );
+			System.out.println("cold weather"); }
 
-		   /* Other methods protected by singleton-ness */
-		   protected static void demoMethod( ) {
-		      System.out.println("demoMethod for singleton");
-		   }
-		}
-
+		else {
+  			System.out.println(--LeenaTemp); 
+			System.out.println("hot weather");}  }}
